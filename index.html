@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Bianca ❤️ 6 Anos de Nós</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="netflix-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="netflix-red">6 ANOS</span>
+                <span class="logo-heart">❤️</span>
+                <span class="logo-text">DE NÓS</span>
+            </div>
+            <div class="nav-icons">
+                <button class="nav-music-btn" id="navMusicBtn" title="Tocar/Pausar música">🎵</button>
+                <span class="nav-icon">👤</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-section">
+        <div class="hero-backdrop" id="heroBackdrop"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="profile-badge">⭐ 6 ANOS DE HISTÓRIA ⭐</div>
+            <h1 class="hero-title">FELIZ 6 ANOS, BIANCA!</h1>
+            <div class="hero-meta">
+                <span class="match-percent">100% MATCH</span>
+                <span class="year">❤️ AMOR ETERNO</span>
+            </div>
+            <p class="hero-bio" id="bioTexto">
+                "Minha eterna Corinthiana — você é meu maior título."
+            </p>
+            <div class="hero-buttons">
+                <button class="play-btn" id="assistirTrailerBtn">
+                    <span>▶</span> ASSISTIR TRAILER
+                </button>
+                <button class="my-list-btn" id="botaoSurpresa">
+                    <span>🎁</span> SURPRESA ESPECIAL
+                </button>
+            </div>
+        </div>
+        <div class="hero-fade"></div>
+    </section>
+
+    <!-- ========== SEÇÕES ========== -->
+    <div class="netflix-sections">
+
+        <!-- Informações -->
+        <div class="netflix-row">
+            <div class="row-header">
+                <h2>📊 NÓS EM NÚMEROS</h2>
+            </div>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-emoji">🎬</div>
+                    <div class="info-value">6</div>
+                    <div class="info-label">ANOS JUNTOS</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-emoji">📸</div>
+                    <div class="info-value" id="totalFotos">30</div>
+                    <div class="info-label">MOMENTOS</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-emoji">🎵</div>
+                    <div class="info-value">∞</div>
+                    <div class="info-label">MÚSICAS NOSSAS</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-emoji">💯</div>
+                    <div class="info-value">100%</div>
+                    <div class="info-label">COMPATÍVEIS</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galeria -->
+        <div class="netflix-row">
+            <div class="row-header">
+                <h2>🎬 NOSSOS MOMENTOS</h2>
+                <button class="see-all" id="verTodosBtn">VER TODOS →</button>
+            </div>
+            <div class="carousel-container">
+                <div class="movie-row" id="galeriaFotos"></div>
+                <button class="carousel-btn carousel-btn-left" id="carouselLeft">❮</button>
+                <button class="carousel-btn carousel-btn-right" id="carouselRight">❯</button>
+            </div>
+        </div>
+
+        <!-- Onde tudo começou -->
+        <div class="netflix-row">
+            <div class="row-header">
+                <h2>📍 ONDE TUDO COMEÇOU</h2>
+            </div>
+            <div class="mapa-container">
+                <a href="https://www.google.com/maps/place/Pinheiros/@-23.5675109,-46.7031797,996m/data=!3m1!1e3!4m14!1m7!3m6!1s0x94ce57a8ea9dbe7f:0x22dca63966b39bf5!2zRXN0YcOnw6NvIFBpbmhlaXJvcw!8m2!3d-23.5675158!4d-46.7006048!16s%2Fg%2F1pycv4qyz!3m5!1s0x94ce57a92876586f:0x94e1588b318d1e6d!8m2!3d-23.5673306!4d-46.7019187!16s%2Fg%2F11fmh3zrhm?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="mapa-card">
+                    <div class="mapa-imagem">
+                        <img src="fotos/MAPA-PINHEIROS.jpeg" alt="Onde tudo começou">
+                        <div class="mapa-overlay">
+                            <span class="mapa-pin">📍</span>
+                        </div>
+                    </div>
+                    <div class="mapa-info">
+                        <div class="mapa-titulo">Nosso Primeiro Encontro</div>
+                        <div class="mapa-local">Pinheiros • São Paulo, SP</div>
+                        <div class="mapa-btn">
+                            <span>Abrir no Google Maps</span>
+                            <span class="mapa-arrow">→</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Por que combinamos -->
+        <div class="netflix-row">
+            <div class="row-header">
+                <h2>⭐ POR QUE SOMOS PERFEITOS JUNTOS</h2>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-number">01</div>
+                    <div class="reason-title">Risadas infinitas</div>
+                    <div class="reason-desc">Nunca paramos de rir juntos</div>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">02</div>
+                    <div class="reason-title">Amor verdadeiro</div>
+                    <div class="reason-desc">Sincero e sem joguinhos</div>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">03</div>
+                    <div class="reason-title">Timão no coração</div>
+                    <div class="reason-desc">Você é minha eterna Corinthiana❤️</div>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-number">04</div>
+                    <div class="reason-title">Confiança total</div>
+                    <div class="reason-desc">A base de tudo</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== PLAYER FLUTUANTE ========== -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-info">
+            <span class="music-emoji" id="musicEmoji">🎵</span>
+            <div class="music-text">
+                <div class="music-title" id="musicTitle">Uptown Funk</div>
+                <div class="music-artist" id="musicArtist">Mark Ronson</div>
+            </div>
+        </div>
+        <div class="music-controls">
+            <button id="prevMusic" title="Anterior">⏮</button>
+            <button id="playPauseMusic" title="Play/Pause">▶</button>
+            <button id="nextMusic" title="Próxima">⏭</button>
+        </div>
+        <div class="music-progress">
+            <div class="music-progress-bar" id="musicProgressBar"></div>
+        </div>
+    </div>
+
+    <!-- ========== MODAL TRAILER ========== -->
+    <div id="trailerModal" class="netflix-modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <span class="modal-title">🎬 TRAILER: "BIANCA & EU"</span>
+                <button class="close-modal" id="closeTrailerModal">✕</button>
+            </div>
+            <div class="modal-body trailer-body">
+                <div class="slideshow-container" id="slideshowContainer">
+                    <div class="slideshow-slides" id="slideshowSlides"></div>
+                    <button class="slideshow-prev" id="slidePrev">❮</button>
+                    <button class="slideshow-next" id="slideNext">❯</button>
+                </div>
+                <div class="trailer-info">
+                    <h3>⭐ Nossa História de Amor ⭐</h3>
+                    <p>Seis anos que valem por uma vida inteira.</p>
+                    <div class="trailer-stats">
+                        <span>🎬 6 Temporadas</span>
+                        <span>❤️ Romance</span>
+                        <span>❤️ Corinthians</span>
+                        <span>⭐ 5 Estrelas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== MODAL SURPRESA ========== -->
+    <div id="surpresaModal" class="netflix-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">🎁 SURPRESA ESPECIAL</span>
+                <button class="close-modal" id="closeSurpresaModal">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="surpresa-heart">💌</div>
+                <h2>Para o amor da minha vida, Bianca...</h2>
+                <p id="mensagemPersonalizada">Carregando...</p>
+                <div class="surpresa-footer">
+                    <span class="netflix-red-text">⭐ TE AMO MAIS QUE TUDO, MINHA ETERNA CORINTHIANA! ⭐</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== MODAL FOTO ========== -->
+    <div id="fotoModal" class="netflix-modal">
+        <div class="modal-content modal-foto">
+            <div class="modal-header">
+                <span class="modal-title" id="fotoTitulo">📸 NOSSO MOMENTO</span>
+                <button class="close-modal" id="closeFotoModal">✕</button>
+            </div>
+            <div class="modal-body">
+                <img id="fotoAmpliada" src="" alt="Momento do casal">
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== MODAIS FOOTER ========== -->
+    <div id="duvidasModal" class="netflix-modal">
+        <div class="modal-content modal-duvidas">
+            <div class="modal-header">
+                <span class="modal-title">❓ DÚVIDAS FREQUENTES</span>
+                <button class="close-modal" id="closeDuvidasModal">✕</button>
+            </div>
+            <div class="modal-body duvidas-body">
+                <div class="duvidas-icon">💭</div>
+                <h2 class="duvidas-pergunta">Ainda tem dúvidas que amo você?</h2>
+                <div class="resposta-card">
+                    <div class="resposta-emoji">💖</div>
+                    <p class="resposta-texto">
+                        Se você ainda tem dúvidas, deixa eu te lembrar:<br><br>
+                        Eu te amo mais do que palavras podem expressar.<br>
+                        Eu te amo mais do que estrelas no céu.<br>
+                        Eu te amo infinitamente e eternamente<br><br>
+                        <strong>Minha Amor Corinthiana</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ajudaModal" class="netflix-modal">
+        <div class="modal-content modal-ajuda">
+            <div class="modal-header">
+                <span class="modal-title">🆘 CENTRAL DE AJUDA</span>
+                <button class="close-modal" id="closeAjudaModal">✕</button>
+            </div>
+            <div class="modal-body ajuda-body">
+                <div class="ajuda-icon">🎧</div>
+                <h2 class="ajuda-pergunta">Precisa de ajuda pra acreditar no nosso amor?</h2>
+                <div class="ajuda-card">
+                    <div class="ajuda-emoji">💪</div>
+                    <p class="ajuda-texto">
+                        Estou aqui 24h por dia pra te lembrar:<br><br>
+                        Você é a pessoa mais incrível que já conheci<br>
+                        Todos os dias eu escolho te amar<br>
+                        Meu coração bate mais forte quando você está perto<br>
+                        Para maiores Informações: 11 96969-6628<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="termosModal" class="netflix-modal">
+        <div class="modal-content modal-termos">
+            <div class="modal-header">
+                <span class="modal-title">📜 TERMOS DE USO</span>
+                <button class="close-modal" id="closeTermosModal">✕</button>
+            </div>
+            <div class="modal-body termos-body">
+                <div class="termos-icon">📋</div>
+                <h2 class="termos-pergunta">Os termos do nosso amor</h2>
+                <div class="termos-card">
+                    <div class="termos-emoji">❤️</div>
+                    <p class="termos-texto">
+                        Ao fazer parte da minha vida, você concorda:<br><br>
+                        Será amada todos os dias sem exceção<br>
+                        Receberá carinho e atenção em dobro<br>
+                        Terá beijos e abraços ilimitados<br>
+                        Todas as nossas conquistas serão comemoradas<br>
+                        Nunca precisará se sentir sozinha<br><br>
+                        <strong>Termos vitalícios e irrevogáveis. Aceitou porque quis hihi</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="privacidadeModal" class="netflix-modal">
+        <div class="modal-content modal-privacidade">
+            <div class="modal-header">
+                <span class="modal-title">🔒 PRIVACIDADE</span>
+                <button class="close-modal" id="closePrivacidadeModal">✕</button>
+            </div>
+            <div class="modal-body privacidade-body">
+                <div class="privacidade-icon">🤐</div>
+                <h2 class="privacidade-pergunta">Seus segredos estão seguros?</h2>
+                <div class="privacidade-card">
+                    <div class="privacidade-emoji">🔐</div>
+                    <p class="privacidade-texto">
+                        Pode ficar tranquila:<br><br>
+                        Não conto seus segredos pra ninguém<br>
+                        Guardo cada palavra sua no coração<br>
+                        Sua confiança é meu maior tesouro<br>
+                        Protejo nossos momentos como relíquias<br><br>
+                        <strong>O que você me conta, morre comigo. Pode confiar! 💖</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="netflix-footer">
+        <div class="footer-links">
+            <a href="#" id="duvidasLink">Dúvidas?</a>
+            <a href="#" id="ajudaLink">Central de Ajuda</a>
+            <a href="#" id="termosLink">Termos de Uso</a>
+            <a href="#" id="privacidadeLink">Privacidade</a>
+        </div>
+        <p class="copyright">Feito com ❤️ pro amor da minha vida — Bianca • 6 Anos</p>
+    </footer>
+
+    <!-- ========== ÁUDIO ========== -->
+    <audio id="bgMusic" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
